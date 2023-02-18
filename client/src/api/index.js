@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API =  axios.create({baseURL:'https://api.render.com/deploy/srv-cfobq2p4rebfdao08id0?key=ITOzp85dfVg'})
+const API =  axios.create({baseURL:'https://stack-overflow-clone-3han.onrender.com'})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('Profile')){

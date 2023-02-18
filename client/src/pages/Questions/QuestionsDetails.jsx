@@ -78,7 +78,7 @@ const QuestionsDetails = () => {
    const dispatch = useDispatch()
    const User = useSelector((state) => (state.currentUserReducer))
    const location = useLocation()
-   const url = 'http://localhost:3000'
+   const url = 'https://api.render.com/deploy/srv-cfobq2p4rebfdao08id0?key=ITOzp85dfVg'
 
    const handlePostAns = (e, answerLength) =>{
       e.preventDefault()

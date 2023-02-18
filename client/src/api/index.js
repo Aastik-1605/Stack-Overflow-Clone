@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API =  axios.create({baseURL:'http://localhost:5000'})
+const API =  axios.create({baseURL:'https://api.render.com/deploy/srv-cfobq2p4rebfdao08id0?key=ITOzp85dfVg'})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('Profile')){

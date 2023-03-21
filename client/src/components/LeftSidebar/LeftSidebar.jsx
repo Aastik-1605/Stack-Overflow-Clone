@@ -1,9 +1,24 @@
 import React from 'react'
 import './LeftSidebar.css'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import Globe from '../../assets/Globe.svg'
 
 const LeftSidebar = () => {
+    const User = useSelector((state) => (state.currentUserReducer))
+    const Navigate = useNavigate()
+
+    const handleSub = (e) => {
+        e.preventDefault()
+        if(User === null){
+            alert('Login or Signup to Subscribe')
+            Navigate('/Auth')
+        }
+        else{
+            Navigate('/PricingPage') 
+        }  
+    }
+
     return (
         <div className='left-sidebar'>
             <nav className='side-nav'>
@@ -21,6 +36,9 @@ const LeftSidebar = () => {
                     </NavLink>
                     <NavLink to='/Users' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
                         <p>Users</p>
+                    </NavLink>
+                    <NavLink to='/PricingPage' onClick={(e) => { handleSub(e) }} className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                        <p>Subscriptions</p>
                     </NavLink>
                 </div>
             </nav>

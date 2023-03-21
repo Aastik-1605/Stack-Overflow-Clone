@@ -44,3 +44,24 @@
     background-color: rgb(225, 225, 225);
     border-right: solid 3px #ef8236;
 }
+
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+  .left-sidebar {
+    width: 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}

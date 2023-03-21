@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kommunicate/kommunicate-chatbot-plugin": "^0.0.5"
+  }
+}

@@ -3,7 +3,6 @@ import './HomeMainbar.css'
 import {useLocation, useNavigate} from 'react-router-dom'
 import { useSelector} from 'react-redux'
 import QuestionList from './QuestionList'
-
 const HomeMainbar = () => {
 
   const location = useLocation();
@@ -99,7 +98,7 @@ const HomeMainbar = () => {
               </>
            }
        </div>
-      
+   
     </div>
   )
 }

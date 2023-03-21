@@ -8,6 +8,8 @@ import questionRoutes from './routes/Questions.js'
 import answerRoutes from './routes/Answers.js'
 
 const app = express();
+
+
 dotenv.config();
 app.use(express.json({limit: "30mb", extended: true}))
 app.use(express.urlencoded({limit: "30mb", extended: true}))
@@ -29,3 +31,8 @@ mongoose.set('strictQuery', false);
 mongoose.connect( DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => {console.log(`server running on port ${PORT}`)}))
     .catch((err) => console.log(err.message))
+
+
+
+
+ 
